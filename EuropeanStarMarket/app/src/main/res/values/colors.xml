@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#387fb3</color>
+    <color name="colorPrimaryDark">#387fb3</color>
+    <color name="colorAccent">#387fb3</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="list_background">#FFFFFF</color>
+    <color name="list_background_pressed">#E4E4E4</color>
+    <color name="nav_drawer_text_color">#787878</color>
+    <color name="counter_text_color">#1D1D1D</color>
+    <color name="grey_bg">#E4E4E4</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="list_divider_gray">#F3F3F3</color>
+
+    <color name="btn_blue">#0065B3</color>
+    <color name="btn_yellow">#F09C18</color>
+</resources>

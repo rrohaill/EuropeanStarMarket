@@ -1,0 +1,94 @@
+{
+  "HomecatelogArray": [
+    {
+      "id": "1",
+      "name": "Bakery",
+      "subCatCount": "12",
+      "image": "bakery.png"
+    },
+    {
+      "id": "2",
+      "name": "Fruits",
+      "subCatCount": "12",
+      "image": "fruits.png"
+    },
+    {
+      "id": "3",
+      "name": "Dairy",
+      "subCatCount": "40",
+      "image": "dairy.png"
+    },
+    {
+      "id": "4",
+      "name": "Drinks",
+      "subCatCount": "40",
+      "image": "drinks.png"
+    },
+    {
+      "id": "5",
+      "name": "Meat, Fish & Chicken",
+      "subCatCount": "24",
+      "image": "meat.png"
+    },
+    {
+      "id": "6",
+      "name": "Frozen",
+      "subCatCount": "28",
+      "image": "frozen.png"
+    },
+    {
+      "id": "7",
+      "name": "Cans & Jars",
+      "subCatCount": "52",
+      "image": "cans.png"
+    },
+    {
+      "id": "8",
+      "name": "Packets Cereals",
+      "subCatCount": "48",
+      "image": "packets.png"
+    },
+    {
+      "id": "9",
+      "name": "Chocolate & Snacks",
+      "subCatCount": "24",
+      "image": "chocolate.png"
+    },
+    {
+      "id": "10",
+      "name": "Cleaning",
+      "subCatCount": "32",
+      "image": "cleaning.png"
+    },
+    {
+      "id": "14",
+      "name": "Beauty & Health",
+      "subCatCount": "52",
+      "image": "beauty.png"
+    },
+    {
+      "id": "15",
+      "name": "Baby",
+      "subCatCount": "12",
+      "image": "baby.png"
+    },
+    {
+      "id": "16",
+      "name": "Pets",
+      "subCatCount": "4",
+      "image": "pets.png"
+    },
+    {
+      "id": "17",
+      "name": "More",
+      "subCatCount": "24",
+      "image": "dietary.png"
+    },
+    {
+      "id": "19",
+      "name": "Ladies Accessories",
+      "subCatCount": "0",
+      "image": "ladies.png"
+    }
+  ]
+}

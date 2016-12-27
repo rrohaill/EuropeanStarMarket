@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/list_selector">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/activityMarginSmall"
+        android:layout_marginRight="@dimen/activityMarginSmall"
+        android:minHeight="@dimen/navDrawerItemHeight"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_centerVertical="true"/>
+
+        <com.star.market.europeanstarmarket.CustomFontView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:paddingLeft="20dp"
+            android:textSize="@dimen/textViewTextSizeNormal"
+            android:layout_marginLeft="@dimen/nav_drawer_item_margin_left"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/black" />
+
+        <com.star.market.europeanstarmarket.CustomFontView
+            android:id="@+id/counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            android:textColor="@color/counter_text_color"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

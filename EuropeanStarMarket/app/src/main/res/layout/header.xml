@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/headerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/header_height"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/headerLayout_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:baselineAligned="false">
+
+        <ImageView
+            android:id="@+id/drawerImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/btn_header_icon_drawer_normal" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp">
+
+
+            <ImageView
+                android:id="@+id/imageviewCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cart" />
+
+            <ImageView
+                android:id="@+id/iv_count"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignLeft="@+id/imageviewCart"
+                android:text="3"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="@dimen/textViewTextSizeSmall" />
+
+        </RelativeLayout>
+
+        <com.star.market.europeanstarmarket.CustomFontView
+            android:id="@+id/tvAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Home"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textViewTextSizeLarge"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/activity_main_catagory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent">
+
+        <include
+            android:id="@+id/header_layout"
+            layout="@layout/header" />
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/header_layout"
+            android:layout_margin="10dp"
+            android:hint="Search"
+            android:background="@drawable/edittext_round_corner_bg" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_main_category"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/et_search"
+            android:background="@color/black_overlay" />
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/header_Layout"
+        layout="@layout/drawer_layout_list" />
+</android.support.v4.widget.DrawerLayout>
