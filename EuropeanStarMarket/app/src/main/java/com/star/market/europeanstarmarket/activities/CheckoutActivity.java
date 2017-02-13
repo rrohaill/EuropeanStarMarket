@@ -7,6 +7,7 @@ import android.support.v7.widget.AppCompatSpinner;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -16,6 +17,7 @@ import android.widget.TextView;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.star.market.europeanstarmarket.CustomFontView;
 import com.star.market.europeanstarmarket.R;
 import com.star.market.europeanstarmarket.adapters.IOnItemClickCustomListner;
 import com.star.market.europeanstarmarket.adapters.NavigationDrawerManager;
@@ -39,6 +41,7 @@ public class CheckoutActivity extends BaseActivity implements IOnItemClickCustom
     private SubProductListAdapter adapter;
     private Button btnOrder;
     private AppCompatSpinner spPayment;
+    private CustomFontView tvTotal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,6 +71,19 @@ public class CheckoutActivity extends BaseActivity implements IOnItemClickCustom
         header.setText("Checkout");
         findViewById(R.id.imageviewCart).setVisibility(View.INVISIBLE);
         findViewById(R.id.iv_count).setVisibility(View.INVISIBLE);
+        tvTotal = (CustomFontView) findViewById(R.id.tv_total);
+
+        if (list.size() > 0) {
+            double total = 0;
+
+            for (int i = 0; i < list.size(); i++) {
+                if (!TextUtils.isEmpty(list.get(i).getPrice())) {
+                    total = total + Double.parseDouble(list.get(i).getPrice());
+                }
+            }
+
+            tvTotal.setText("Total AED: " + (total + 1) + "");
+        }
 
         rvMainCategory = (RecyclerView) findViewById(R.id.rv_main_category);
 
@@ -131,6 +147,21 @@ public class CheckoutActivity extends BaseActivity implements IOnItemClickCustom
 
         adapter.notifyItemRemoved(position);
         adapter.notifyDataSetChanged();
+
+        if (list.size() == 0) {
+            finish();
+        } else {
+
+            double total = 0;
+
+            for (int i = 0; i < list.size(); i++) {
+                if (!TextUtils.isEmpty(list.get(i).getPrice())) {
+                    total = total + Double.parseDouble(list.get(i).getPrice());
+                }
+            }
+
+            tvTotal.setText("Total AED: " + (total + 1) + "");
+        }
 
     }
 

@@ -19,10 +19,10 @@ import static com.star.market.europeanstarmarket.activities.BaseActivity.setDial
 public class SplashActivity extends Activity {
 
 //    private String staticUdid = "42a22e8d6fb6c1e6";
-private String staticUdid = "6454c4b6a1a6dda5";
+//private String staticUdid = "50a3320163784847";
 
     // Galaxy s6 edge
-//    private String staticUdid = "6111e8750d45f0b9";
+    private String staticUdid = "6111e8750d45f0b9";
 
     private String udid;
 
